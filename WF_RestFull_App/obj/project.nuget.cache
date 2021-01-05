@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RC0MnLkfB9jVuqrk/4J+mZxLLJ651p3BfNt1XT2cZ8JcJYv4k6Oe9HzS1GIX2Cu0hZD9kHnt+UWCnNb4SUODKw==",
+  "dgSpecHash": "qrWBehNHktaiyRSdl9aph5o+yiWUprwoNfZN2DWX57XgrO5zMn1hBV73V3Zg7FVd9F7iMqZxTG3eauhmb/C+IA==",
   "success": true,
-  "projectFilePath": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\WF_RestFull_App\\WF_RestFul_App.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\ander\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\Anderson\\ProjetoDelivery\\WF_RestFull_App\\WF_RestFul_App.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

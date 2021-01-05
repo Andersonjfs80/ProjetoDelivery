@@ -28,7 +28,8 @@ namespace WF_RestFull_App
         private List<Order> FPendingOrderList = new List<Order>();
 
         private void FrmPainelDelivery_Load(object sender, EventArgs e)
-        {          
+        {
+            tcPainelDelivery.SelectedTab = tpPedidos;
             _token = GetAccessOauthToken(new Service());            
         }
 

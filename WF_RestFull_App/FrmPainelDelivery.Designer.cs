@@ -28,23 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
             this.tcPainelDelivery = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.tpPedidos = new System.Windows.Forms.TabPage();
+            this.gbGrade = new System.Windows.Forms.GroupBox();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
+            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
+            this.pnlBotoes = new System.Windows.Forms.Panel();
+            this.btnLimpar = new System.Windows.Forms.Button();
+            this.btnPolling = new System.Windows.Forms.Button();
+            this.btnAcknowledgment = new System.Windows.Forms.Button();
+            this.btnStatus = new System.Windows.Forms.Button();
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tpConfiguracoes = new System.Windows.Forms.TabPage();
             this.tcPainelDelivery.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.tpPedidos.SuspendLayout();
+            this.gbGrade.SuspendLayout();
+            this.pnlBotoes.SuspendLayout();
             this.SuspendLayout();
             // 
             // tcPainelDelivery
             // 
-            this.tcPainelDelivery.Controls.Add(this.tabPage1);
-            this.tcPainelDelivery.Controls.Add(this.tabPage2);
+            this.tcPainelDelivery.Controls.Add(this.tpPedidos);
+            this.tcPainelDelivery.Controls.Add(this.tpConfiguracoes);
             this.tcPainelDelivery.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tcPainelDelivery.Location = new System.Drawing.Point(0, 0);
             this.tcPainelDelivery.Name = "tcPainelDelivery";
@@ -52,67 +62,110 @@
             this.tcPainelDelivery.Size = new System.Drawing.Size(511, 359);
             this.tcPainelDelivery.TabIndex = 0;
             // 
-            // tabPage1
+            // tpPedidos
             // 
-            this.tabPage1.Controls.Add(this.button4);
-            this.tabPage1.Controls.Add(this.button3);
-            this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.richTextBox2);
-            this.tabPage1.Controls.Add(this.statusStrip1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(503, 331);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Pedidos";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.tpPedidos.Controls.Add(this.gbGrade);
+            this.tpPedidos.Controls.Add(this.pnlBotoes);
+            this.tpPedidos.Controls.Add(this.richTextBox2);
+            this.tpPedidos.Controls.Add(this.statusStrip1);
+            this.tpPedidos.Location = new System.Drawing.Point(4, 24);
+            this.tpPedidos.Name = "tpPedidos";
+            this.tpPedidos.Padding = new System.Windows.Forms.Padding(3);
+            this.tpPedidos.Size = new System.Drawing.Size(503, 331);
+            this.tpPedidos.TabIndex = 0;
+            this.tpPedidos.Text = "Pedidos";
+            this.tpPedidos.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // gbGrade
             // 
-            this.button4.Location = new System.Drawing.Point(420, 120);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Limpar";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.gbGrade.Controls.Add(this.listView1);
+            this.gbGrade.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gbGrade.Location = new System.Drawing.Point(3, 105);
+            this.gbGrade.Name = "gbGrade";
+            this.gbGrade.Size = new System.Drawing.Size(497, 149);
+            this.gbGrade.TabIndex = 6;
+            this.gbGrade.TabStop = false;
+            this.gbGrade.Text = "Delivery";
             // 
-            // button3
+            // listView1
             // 
-            this.button3.Location = new System.Drawing.Point(170, 120);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Status";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3});
+            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            listViewGroup1.Header = "ListViewGroup";
+            listViewGroup1.Name = "listViewGroup1";
+            listViewGroup2.Header = "ListViewGroup";
+            listViewGroup2.Name = "listViewGroup2";
+            this.listView1.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
+            listViewGroup1,
+            listViewGroup2});
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(3, 19);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(491, 127);
+            this.listView1.TabIndex = 0;
+            this.listView1.UseCompatibleStateImageBehavior = false;
             // 
-            // button2
+            // pnlBotoes
             // 
-            this.button2.Location = new System.Drawing.Point(89, 120);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Acknowledgment";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.pnlBotoes.Controls.Add(this.btnLimpar);
+            this.pnlBotoes.Controls.Add(this.btnPolling);
+            this.pnlBotoes.Controls.Add(this.btnAcknowledgment);
+            this.pnlBotoes.Controls.Add(this.btnStatus);
+            this.pnlBotoes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlBotoes.Location = new System.Drawing.Point(3, 3);
+            this.pnlBotoes.Name = "pnlBotoes";
+            this.pnlBotoes.Size = new System.Drawing.Size(497, 102);
+            this.pnlBotoes.TabIndex = 5;
             // 
-            // button1
+            // btnLimpar
             // 
-            this.button1.Location = new System.Drawing.Point(8, 120);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Polling";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnLimpar.Location = new System.Drawing.Point(407, 9);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpar.TabIndex = 4;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // btnPolling
+            // 
+            this.btnPolling.Location = new System.Drawing.Point(14, 9);
+            this.btnPolling.Name = "btnPolling";
+            this.btnPolling.Size = new System.Drawing.Size(75, 23);
+            this.btnPolling.TabIndex = 2;
+            this.btnPolling.Text = "Polling";
+            this.btnPolling.UseVisualStyleBackColor = true;
+            this.btnPolling.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnAcknowledgment
+            // 
+            this.btnAcknowledgment.Location = new System.Drawing.Point(14, 38);
+            this.btnAcknowledgment.Name = "btnAcknowledgment";
+            this.btnAcknowledgment.Size = new System.Drawing.Size(75, 23);
+            this.btnAcknowledgment.TabIndex = 2;
+            this.btnAcknowledgment.Text = "Acknowledgment";
+            this.btnAcknowledgment.UseVisualStyleBackColor = true;
+            this.btnAcknowledgment.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnStatus
+            // 
+            this.btnStatus.Location = new System.Drawing.Point(14, 67);
+            this.btnStatus.Name = "btnStatus";
+            this.btnStatus.Size = new System.Drawing.Size(75, 23);
+            this.btnStatus.TabIndex = 3;
+            this.btnStatus.Text = "Status";
+            this.btnStatus.UseVisualStyleBackColor = true;
+            this.btnStatus.Click += new System.EventHandler(this.button3_Click);
             // 
             // richTextBox2
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(8, 149);
+            this.richTextBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.richTextBox2.Location = new System.Drawing.Point(3, 254);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(487, 154);
+            this.richTextBox2.Size = new System.Drawing.Size(497, 52);
             this.richTextBox2.TabIndex = 1;
             this.richTextBox2.Text = "";
             // 
@@ -124,15 +177,15 @@
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // tabPage2
+            // tpConfiguracoes
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(503, 331);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Configurações";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tpConfiguracoes.Location = new System.Drawing.Point(4, 24);
+            this.tpConfiguracoes.Name = "tpConfiguracoes";
+            this.tpConfiguracoes.Padding = new System.Windows.Forms.Padding(3);
+            this.tpConfiguracoes.Size = new System.Drawing.Size(503, 331);
+            this.tpConfiguracoes.TabIndex = 1;
+            this.tpConfiguracoes.Text = "Configurações";
+            this.tpConfiguracoes.UseVisualStyleBackColor = true;
             // 
             // FrmPainelDelivery
             // 
@@ -144,8 +197,10 @@
             this.Text = "Delivery";
             this.Load += new System.EventHandler(this.FrmPainelDelivery_Load);
             this.tcPainelDelivery.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
+            this.tpPedidos.ResumeLayout(false);
+            this.tpPedidos.PerformLayout();
+            this.gbGrade.ResumeLayout(false);
+            this.pnlBotoes.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -153,14 +208,20 @@
         #endregion
 
         private System.Windows.Forms.TabControl tcPainelDelivery;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tpPedidos;
+        private System.Windows.Forms.TabPage tpConfiguracoes;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.RichTextBox richTextBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnPolling;
+        private System.Windows.Forms.Button btnAcknowledgment;
+        private System.Windows.Forms.Button btnStatus;
+        private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.Panel pnlBotoes;
+        private System.Windows.Forms.GroupBox gbGrade;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
     }
 }
 

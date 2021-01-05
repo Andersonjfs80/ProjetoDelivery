@@ -27,6 +27,43 @@ namespace Application.Services.Domain.Standard
                 Result = token
             };
         }
+        private static Uri GerURLOrderStatus(string orderstatus, string reference)
+        {
+            Uri endPointUrl = null;
+
+            switch (orderstatus)
+            {
+                case PoolingEventStatusCode.CONFIRMED:
+                    endPointUrl = new Uri(string.Format("{0}{1}/{2}/{3}", Endpoints.URL_BASE, Endpoints.VERSION_1, reference, Endpoints.URL_ORDER_CONFIRMATION));
+                    break;
+                case PoolingEventStatusCode.DELIVERED:
+                    endPointUrl = new Uri(string.Format("{0}{1}/{2}/{3}", Endpoints.URL_BASE, Endpoints.VERSION_1, reference, Endpoints.URL_ORDER_DELIVERED));
+                    break;
+                case PoolingEventStatusCode.DISPATCHED:
+                    endPointUrl = new Uri(string.Format("{0}{1}/{2}/{3}", Endpoints.URL_BASE, Endpoints.VERSION_1, reference, Endpoints.URL_ORDER_DISPATCHED));
+                    break;
+                case PoolingEventStatusCode.INTEGRATED:
+                    endPointUrl = new Uri(string.Format("{0}{1}/{2}/{3}", Endpoints.URL_BASE, Endpoints.VERSION_1, reference, Endpoints.URL_ORDER_INTEGRATED));
+                    break;
+                case PoolingEventStatusCode.REJECTED:
+                    endPointUrl = new Uri(string.Format("{0}{1}/{2}/{3}", Endpoints.URL_BASE, Endpoints.VERSION_1, reference, Endpoints.URL_ORDER_REJECTED));
+                    break;
+                case PoolingEventStatusCode.READY_TO_DELIVER:
+                    endPointUrl = new Uri(string.Format("{0}{1}/{2}/{3}", Endpoints.URL_BASE, Endpoints.VERSION_1, reference, Endpoints.URL_ORDER_READY_TO_DELIVER));
+                    break;
+                case PoolingEventStatusCode.CANCELLATION_REQUESTED:
+                    endPointUrl = new Uri(string.Format("{0}{1}/{2}/{3}", Endpoints.URL_BASE, Endpoints.VERSION_3, reference, Endpoints.URL_ORDER_CANCELLATION_REQUESTED));
+                    break;
+                case PoolingEventStatusCode.CONSUMER_CANCELLATION_ACCEPTED:
+                    endPointUrl = new Uri(string.Format("{0}{1}/{2}/{3}", Endpoints.URL_BASE, Endpoints.VERSION_2, reference, Endpoints.URL_ORDER_CONSUMER_CANCELLATION_ACCEPTED));
+                    break;
+                case PoolingEventStatusCode.CONSUMER_CANCELLATION_DENIED:
+                    endPointUrl = new Uri(string.Format("{0}{1}/{2}/{3}", Endpoints.URL_BASE, Endpoints.VERSION_2, reference, Endpoints.URL_ORDER_CONSUMER_CANCELLATION_DENIED));
+                    break;
+            }
+
+            return endPointUrl;
+        }
         public IReturnEvent<Token> GetAccessOauthToken(UserAPI userAPI)
         {
             Uri accessAuthorizationTokenURL = new Uri(Endpoints.URL_BASE + Endpoints.URL_TOKEN);
@@ -179,7 +216,7 @@ namespace Application.Services.Domain.Standard
         }
         public IGenericReturn SendOrdersStatus(Token token, OrderStatus orderstatus)
         {
-            Uri endPointUrl = GerURLOrderStatus(orderstatus.EventOrderCode, orderstatus.);
+            Uri endPointUrl = GerURLOrderStatus(orderstatus.EventOrderCode, orderstatus.Reference);
 
             //faltando criar o json da rejection e cancelamento
 
@@ -237,43 +274,6 @@ namespace Application.Services.Domain.Standard
                 Message = responseHttp.RequestMessage.ToString(),
                 Success = false
             };
-        }
-        private static Uri GerURLOrderStatus(string orderstatus, string correlationId)
-        {
-            Uri endPointUrl = null;
-
-            switch (orderstatus)
-            {
-                case PoolingEventStatusCode.CONFIRMED:
-                    endPointUrl = new Uri(string.Format("{0}{1}/{2}/{3}", Endpoints.URL_BASE, Endpoints.VERSION_1, reference, Endpoints.URL_ORDER_CONFIRMATION));
-                    break;
-                case PoolingEventStatusCode.DELIVERED:
-                    endPointUrl = new Uri(string.Format("{0}{1}/{2}/{3}", Endpoints.URL_BASE, Endpoints.VERSION_1, reference, Endpoints.URL_ORDER_DELIVERED));
-                    break;
-                case PoolingEventStatusCode.DISPATCHED:
-                    endPointUrl = new Uri(string.Format("{0}{1}/{2}/{3}", Endpoints.URL_BASE, Endpoints.VERSION_1, reference, Endpoints.URL_ORDER_DISPATCHED));
-                    break;
-                case PoolingEventStatusCode.INTEGRATED:
-                    endPointUrl = new Uri(string.Format("{0}{1}/{2}/{3}", Endpoints.URL_BASE, Endpoints.VERSION_1, reference, Endpoints.URL_ORDER_INTEGRATED));
-                    break;
-                case PoolingEventStatusCode.REJECTED:
-                    endPointUrl = new Uri(string.Format("{0}{1}/{2}/{3}", Endpoints.URL_BASE, Endpoints.VERSION_1, reference, Endpoints.URL_ORDER_REJECTED));
-                    break;
-                case PoolingEventStatusCode.READY_TO_DELIVER:
-                    endPointUrl = new Uri(string.Format("{0}{1}/{2}/{3}", Endpoints.URL_BASE, Endpoints.VERSION_1, reference, Endpoints.URL_ORDER_READY_TO_DELIVER));
-                    break;
-                case PoolingEventStatusCode.CANCELLATION_REQUESTED:
-                    endPointUrl = new Uri(string.Format("{0}{1}/{2}/{3}", Endpoints.URL_BASE, Endpoints.VERSION_3, reference, Endpoints.URL_ORDER_CANCELLATION_REQUESTED));
-                    break;
-                case PoolingEventStatusCode.CONSUMER_CANCELLATION_ACCEPTED:
-                    endPointUrl = new Uri(string.Format("{0}{1}/{2}/{3}", Endpoints.URL_BASE, Endpoints.VERSION_2, reference, Endpoints.URL_ORDER_CONSUMER_CANCELLATION_ACCEPTED));
-                    break;
-                case PoolingEventStatusCode.CONSUMER_CANCELLATION_DENIED:
-                    endPointUrl = new Uri(string.Format("{0}{1}/{2}/{3}", Endpoints.URL_BASE, Endpoints.VERSION_2, reference, Endpoints.URL_ORDER_CONSUMER_CANCELLATION_DENIED));
-                    break;
-            }
-
-            return endPointUrl;
         }
     }
 }
