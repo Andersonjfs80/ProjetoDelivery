@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\Visual Studio 2017\\Projects\\ProjetoDelivery\\DeliveryApiRestFul\\Application.csproj": {}
+    "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\DeliveryApiRestFul\\Application.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\Visual Studio 2017\\Projects\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj": {
+    "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\Visual Studio 2017\\Projects\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj",
+        "projectUniqueName": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj",
         "projectName": "Application.Domain",
-        "projectPath": "D:\\Documents\\Visual Studio 2017\\Projects\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj",
+        "projectPath": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj",
         "packagesPath": "C:\\Users\\ander\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\Visual Studio 2017\\Projects\\ProjetoDelivery\\Application.Domain\\obj\\",
+        "outputPath": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Application.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Microsoft\\Xamarin\\NuGet\\",
@@ -69,14 +69,14 @@
         }
       }
     },
-    "D:\\Documents\\Visual Studio 2017\\Projects\\ProjetoDelivery\\DeliveryApiRestFul\\Application.csproj": {
+    "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\DeliveryApiRestFul\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\Visual Studio 2017\\Projects\\ProjetoDelivery\\DeliveryApiRestFul\\Application.csproj",
+        "projectUniqueName": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\DeliveryApiRestFul\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "D:\\Documents\\Visual Studio 2017\\Projects\\ProjetoDelivery\\DeliveryApiRestFul\\Application.csproj",
+        "projectPath": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\DeliveryApiRestFul\\Application.csproj",
         "packagesPath": "C:\\Users\\ander\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\Visual Studio 2017\\Projects\\ProjetoDelivery\\DeliveryApiRestFul\\obj\\",
+        "outputPath": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\DeliveryApiRestFul\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Microsoft\\Xamarin\\NuGet\\",
@@ -98,8 +98,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Documents\\Visual Studio 2017\\Projects\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj": {
-                "projectPath": "D:\\Documents\\Visual Studio 2017\\Projects\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj"
+              "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj": {
+                "projectPath": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj"
               }
             }
           }

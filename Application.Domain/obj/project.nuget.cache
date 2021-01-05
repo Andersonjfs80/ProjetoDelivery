@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dqWpEkq2OZOcqv1uTDPCnzJX4PLxV2tIYSI6jXZKBIgD4VVMRUkV6I7PdIDt2kocfoqKjZY/u29pXoZWtNCOUw==",
+  "dgSpecHash": "V2T0eF7TROxMGjn9lvix9HGar4nXvTQzGXzRuFdG5w/PktTiAhGRT+ByllrSM3cEIgdidEb7reDUm0+2sTKqnA==",
   "success": true,
-  "projectFilePath": "D:\\Documents\\Visual Studio 2017\\Projects\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj",
+  "projectFilePath": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ander\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
   ],

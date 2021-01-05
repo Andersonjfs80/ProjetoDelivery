@@ -34,11 +34,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\Visual Studio 2017\\Projects\\ProjetoDelivery\\DeliveryApiRestFul\\Application.csproj",
+      "projectUniqueName": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\DeliveryApiRestFul\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "D:\\Documents\\Visual Studio 2017\\Projects\\ProjetoDelivery\\DeliveryApiRestFul\\Application.csproj",
+      "projectPath": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\DeliveryApiRestFul\\Application.csproj",
       "packagesPath": "C:\\Users\\ander\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\Visual Studio 2017\\Projects\\ProjetoDelivery\\DeliveryApiRestFul\\obj\\",
+      "outputPath": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\DeliveryApiRestFul\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "E:\\Microsoft\\Xamarin\\NuGet\\",
@@ -58,9 +58,10 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "D:\\Documents\\Visual Studio 2017\\Projects\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj": {
-              "projectPath": "D:\\Documents\\Visual Studio 2017\\Projects\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj"
+            "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj": {
+              "projectPath": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj"
             }
           }
         }
@@ -73,11 +74,29 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.2, 3.1.2]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.8.20417.9\\RuntimeIdentifierGraph.json"
       }
     }
   }

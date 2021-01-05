@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\Visual Studio 2017\\Projects\\ProjetoDelivery\\Domain\\Domain.csproj": {}
+    "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\Visual Studio 2017\\Projects\\ProjetoDelivery\\Domain\\Domain.csproj": {
+    "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\Visual Studio 2017\\Projects\\ProjetoDelivery\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\Documents\\Visual Studio 2017\\Projects\\ProjetoDelivery\\Domain\\Domain.csproj",
+        "projectPath": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\ander\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\Visual Studio 2017\\Projects\\ProjetoDelivery\\Domain\\obj\\",
+        "outputPath": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Microsoft\\Xamarin\\NuGet\\",
