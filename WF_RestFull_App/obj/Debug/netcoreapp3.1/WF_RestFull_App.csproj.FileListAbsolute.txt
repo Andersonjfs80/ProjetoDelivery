@@ -1,0 +1,15 @@
+C:\Users\Usuario\Desktop\ProjetoDelivery\WF_RestFull_App\obj\Debug\netcoreapp3.1\WF_RestFull_App.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\ProjetoDelivery\WF_RestFull_App\obj\Debug\netcoreapp3.1\WF_RestFull_App.FrmPainelDelivery.resources
+C:\Users\Usuario\Desktop\ProjetoDelivery\WF_RestFull_App\obj\Debug\netcoreapp3.1\WF_RestFull_App.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\ProjetoDelivery\WF_RestFull_App\obj\Debug\netcoreapp3.1\WF_RestFull_App.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\ProjetoDelivery\WF_RestFull_App\obj\Debug\netcoreapp3.1\WF_RestFull_App.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\ProjetoDelivery\WF_RestFull_App\obj\Debug\netcoreapp3.1\WF_RestFull_App.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\ProjetoDelivery\WF_RestFull_App\bin\Debug\netcoreapp3.1\WF_RestFull_App.exe
+C:\Users\Usuario\Desktop\ProjetoDelivery\WF_RestFull_App\bin\Debug\netcoreapp3.1\WF_RestFull_App.deps.json
+C:\Users\Usuario\Desktop\ProjetoDelivery\WF_RestFull_App\bin\Debug\netcoreapp3.1\WF_RestFull_App.runtimeconfig.json
+C:\Users\Usuario\Desktop\ProjetoDelivery\WF_RestFull_App\bin\Debug\netcoreapp3.1\WF_RestFull_App.runtimeconfig.dev.json
+C:\Users\Usuario\Desktop\ProjetoDelivery\WF_RestFull_App\bin\Debug\netcoreapp3.1\WF_RestFull_App.dll
+C:\Users\Usuario\Desktop\ProjetoDelivery\WF_RestFull_App\bin\Debug\netcoreapp3.1\WF_RestFull_App.pdb
+C:\Users\Usuario\Desktop\ProjetoDelivery\WF_RestFull_App\obj\Debug\netcoreapp3.1\WF_RestFull_App.dll
+C:\Users\Usuario\Desktop\ProjetoDelivery\WF_RestFull_App\obj\Debug\netcoreapp3.1\WF_RestFull_App.pdb
+C:\Users\Usuario\Desktop\ProjetoDelivery\WF_RestFull_App\obj\Debug\netcoreapp3.1\WF_RestFull_App.genruntimeconfig.cache

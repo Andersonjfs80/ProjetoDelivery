@@ -1,0 +1,12 @@
+C:\Users\Usuario\Desktop\ProjetoDelivery\DeliveryApiRestFul\bin\Debug\netcoreapp3.1\Application.deps.json
+C:\Users\Usuario\Desktop\ProjetoDelivery\DeliveryApiRestFul\bin\Debug\netcoreapp3.1\Application.dll
+C:\Users\Usuario\Desktop\ProjetoDelivery\DeliveryApiRestFul\bin\Debug\netcoreapp3.1\Application.pdb
+C:\Users\Usuario\Desktop\ProjetoDelivery\DeliveryApiRestFul\bin\Debug\netcoreapp3.1\Application.Domain.dll
+C:\Users\Usuario\Desktop\ProjetoDelivery\DeliveryApiRestFul\bin\Debug\netcoreapp3.1\Application.Domain.pdb
+C:\Users\Usuario\Desktop\ProjetoDelivery\DeliveryApiRestFul\obj\Debug\netcoreapp3.1\Application.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\ProjetoDelivery\DeliveryApiRestFul\obj\Debug\netcoreapp3.1\Application.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\ProjetoDelivery\DeliveryApiRestFul\obj\Debug\netcoreapp3.1\Application.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\ProjetoDelivery\DeliveryApiRestFul\obj\Debug\netcoreapp3.1\Application.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\ProjetoDelivery\DeliveryApiRestFul\obj\Debug\netcoreapp3.1\Application.csproj.CopyComplete
+C:\Users\Usuario\Desktop\ProjetoDelivery\DeliveryApiRestFul\obj\Debug\netcoreapp3.1\Application.dll
+C:\Users\Usuario\Desktop\ProjetoDelivery\DeliveryApiRestFul\obj\Debug\netcoreapp3.1\Application.pdb

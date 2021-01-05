@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "9/G6ZSQJDRNcHhtYw8QsU31iRSf0iP32GB9btsFcHMwj4VJQj1N9CPi0izhmIF8+3JvsovqGZnNwXvTzI0L+Qg==",
+  "success": true,
+  "projectFilePath": "D:\\Documents\\Visual Studio 2017\\Projects\\ProjetoDelivery\\DeliveryApiRestFul\\Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ander\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

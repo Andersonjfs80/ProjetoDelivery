@@ -1,0 +1,10 @@
+C:\Users\Usuario\Desktop\ProjetoDelivery\WFA_RestFul_App_Net\bin\Debug\WFA_RestFul_App_Net.exe.config
+C:\Users\Usuario\Desktop\ProjetoDelivery\WFA_RestFul_App_Net\bin\Debug\WFA_RestFul_App_Net.exe
+C:\Users\Usuario\Desktop\ProjetoDelivery\WFA_RestFul_App_Net\bin\Debug\WFA_RestFul_App_Net.pdb
+C:\Users\Usuario\Desktop\ProjetoDelivery\WFA_RestFul_App_Net\obj\Debug\WFA_RestFul_App_Net.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\ProjetoDelivery\WFA_RestFul_App_Net\obj\Debug\WFA_RestFul_App_Net.Form1.resources
+C:\Users\Usuario\Desktop\ProjetoDelivery\WFA_RestFul_App_Net\obj\Debug\WFA_RestFul_App_Net.Properties.Resources.resources
+C:\Users\Usuario\Desktop\ProjetoDelivery\WFA_RestFul_App_Net\obj\Debug\WFA_RestFul_App_Net.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\ProjetoDelivery\WFA_RestFul_App_Net\obj\Debug\WFA_RestFul_App_Net.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\ProjetoDelivery\WFA_RestFul_App_Net\obj\Debug\WFA_RestFul_App_Net.exe
+C:\Users\Usuario\Desktop\ProjetoDelivery\WFA_RestFul_App_Net\obj\Debug\WFA_RestFul_App_Net.pdb
