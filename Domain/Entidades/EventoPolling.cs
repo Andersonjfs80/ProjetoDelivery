@@ -6,18 +6,18 @@ using System.Text;
 
 namespace Domain.Entidades
 {
-    [Table("TblEventPolling")]
-    public class EventPolling
+    [Table("TblEventoPolling")]
+    public class EventoPolling
     {
         [Key]
         [Display(Name = "Id#")]
-        public int EventPollingId { get; set; }
+        public int EventoPollingId { get; set; }
 
         [Required(ErrorMessage = "Informe o conteúdo do arquivo JSON.")]
         [Display(Name = "Dados do arquivo JSON")]
         public string ConteudoJSON { get; set; }
 
-        [Key]
+        [Required(ErrorMessage = "Informe a quantidade de eventos.")]
         [Display(Name = "Quantidade de eventos no arquivo JSON")]
         public int QuantidadeEventos { get; set; }
 
@@ -27,7 +27,7 @@ namespace Domain.Entidades
 
         [Required]
         [Display(Name = "Acknowledged")]
-        public bool Acknowledged { get; set; } = false;
+        public bool ReconhecidoPelaOperadora { get; set; } = false;
     }
 }
 
