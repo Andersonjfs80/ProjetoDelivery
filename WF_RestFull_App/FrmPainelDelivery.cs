@@ -50,7 +50,7 @@ namespace WF_RestFull_App
                 {
                     foreach (var item in eventPollingList.Result)
                     {
-                        if ((item.Code == PoolingEventStatusCode.PLACED) || (item.Code == PoolingEventStatusCode.INTEGRATED))
+                        if ((item.Code == PollingEventStatusCode.PLACED) || (item.Code == PollingEventStatusCode.INTEGRATED))
                         {
                             var EventPendingOrder = service.GetPendingOrder(_token, item.CorrelationId);
                             if (EventPendingOrder.Success == true)
@@ -115,7 +115,7 @@ namespace WF_RestFull_App
                         new OrderStatus()
                         {
                             Reference = item.Reference,
-                            EventOrderCode = PoolingEventStatusCode.CONFIRMED
+                            EventOrderCode = PollingEventStatusCode.CONFIRMED
                         });
 
                     richTextBox2.AppendText($"'sendOrdersStatus'");

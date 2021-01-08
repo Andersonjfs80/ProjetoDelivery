@@ -1,6 +1,6 @@
 ﻿namespace Application.Constant
 {
-    public static class PoolingEventStatusCode
+    public static class PollingEventStatusCode
     {
         //Pedido adicionado no sistema.
         public const string PLACED = "PLACED";

@@ -24,10 +24,6 @@ namespace Domain.Entidades
         [Display(Name = "Data de cadastro")]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime DataCadastro { get; set; } = DateTime.Now;
-
-        [Required]
-        [Display(Name = "Acknowledged")]
-        public bool ReconhecidoPelaOperadora { get; set; } = false;
     }
 }
 

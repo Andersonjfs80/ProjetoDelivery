@@ -33,31 +33,31 @@ namespace Application.Services.Domain.Standard
 
             switch (orderstatus)
             {
-                case PoolingEventStatusCode.CONFIRMED:
+                case PollingEventStatusCode.CONFIRMED:
                     endPointUrl = new Uri(string.Format("{0}{1}/{2}/{3}", Endpoints.URL_BASE, Endpoints.VERSION_1, reference, Endpoints.URL_ORDER_CONFIRMATION));
                     break;
-                case PoolingEventStatusCode.DELIVERED:
+                case PollingEventStatusCode.DELIVERED:
                     endPointUrl = new Uri(string.Format("{0}{1}/{2}/{3}", Endpoints.URL_BASE, Endpoints.VERSION_1, reference, Endpoints.URL_ORDER_DELIVERED));
                     break;
-                case PoolingEventStatusCode.DISPATCHED:
+                case PollingEventStatusCode.DISPATCHED:
                     endPointUrl = new Uri(string.Format("{0}{1}/{2}/{3}", Endpoints.URL_BASE, Endpoints.VERSION_1, reference, Endpoints.URL_ORDER_DISPATCHED));
                     break;
-                case PoolingEventStatusCode.INTEGRATED:
+                case PollingEventStatusCode.INTEGRATED:
                     endPointUrl = new Uri(string.Format("{0}{1}/{2}/{3}", Endpoints.URL_BASE, Endpoints.VERSION_1, reference, Endpoints.URL_ORDER_INTEGRATED));
                     break;
-                case PoolingEventStatusCode.REJECTED:
+                case PollingEventStatusCode.REJECTED:
                     endPointUrl = new Uri(string.Format("{0}{1}/{2}/{3}", Endpoints.URL_BASE, Endpoints.VERSION_1, reference, Endpoints.URL_ORDER_REJECTED));
                     break;
-                case PoolingEventStatusCode.READY_TO_DELIVER:
+                case PollingEventStatusCode.READY_TO_DELIVER:
                     endPointUrl = new Uri(string.Format("{0}{1}/{2}/{3}", Endpoints.URL_BASE, Endpoints.VERSION_1, reference, Endpoints.URL_ORDER_READY_TO_DELIVER));
                     break;
-                case PoolingEventStatusCode.CANCELLATION_REQUESTED:
+                case PollingEventStatusCode.CANCELLATION_REQUESTED:
                     endPointUrl = new Uri(string.Format("{0}{1}/{2}/{3}", Endpoints.URL_BASE, Endpoints.VERSION_3, reference, Endpoints.URL_ORDER_CANCELLATION_REQUESTED));
                     break;
-                case PoolingEventStatusCode.CONSUMER_CANCELLATION_ACCEPTED:
+                case PollingEventStatusCode.CONSUMER_CANCELLATION_ACCEPTED:
                     endPointUrl = new Uri(string.Format("{0}{1}/{2}/{3}", Endpoints.URL_BASE, Endpoints.VERSION_2, reference, Endpoints.URL_ORDER_CONSUMER_CANCELLATION_ACCEPTED));
                     break;
-                case PoolingEventStatusCode.CONSUMER_CANCELLATION_DENIED:
+                case PollingEventStatusCode.CONSUMER_CANCELLATION_DENIED:
                     endPointUrl = new Uri(string.Format("{0}{1}/{2}/{3}", Endpoints.URL_BASE, Endpoints.VERSION_2, reference, Endpoints.URL_ORDER_CONSUMER_CANCELLATION_DENIED));
                     break;
             }
@@ -231,7 +231,7 @@ namespace Application.Services.Domain.Standard
 
             HttpRequestMessage requestHttp = new HttpRequestMessage(HttpMethod.Post, endPointUrl);
 
-            if (orderstatus.EventOrderCode == PoolingEventStatusCode.REJECTED)
+            if (orderstatus.EventOrderCode == PollingEventStatusCode.REJECTED)
             {
                 var eventCancellation = new Dictionary<string, string>
                 {              
@@ -242,7 +242,7 @@ namespace Application.Services.Domain.Standard
                 requestHttp.Content = new StringContent(jsonContent, Encoding.UTF8, "application/json"); 
             }
 
-            if (orderstatus.EventOrderCode == PoolingEventStatusCode.CANCELLATION_REQUESTED)
+            if (orderstatus.EventOrderCode == PollingEventStatusCode.CANCELLATION_REQUESTED)
             {
                 var eventCancellation = new Dictionary<string, string>
                 {

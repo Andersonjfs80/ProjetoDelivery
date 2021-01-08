@@ -17,7 +17,7 @@ namespace Domain.Entidades
         public int EventoPollingId { get; set; }
 
         [Display(Name = "Situação do pedido")]
-        public string EventoStatusCodigo { get; set; }
+        public string EventoCodigo { get; set; }
 
         [Display(Name = "Código de referência do pedido")]
         public string CorrelacaoId { get; set; }
@@ -25,16 +25,21 @@ namespace Domain.Entidades
         [Display(Name = "Código de criação do pedido")]
         public string CriadoEm { get; set; }
 
+        [Display(Name = "Data e hora do evento")]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
+        public DateTime EventoDataHora { get; set; } = DateTime.Now;
+
         [Display(Name = "Código de identificação do pedido")]
-        public string Id { get; set; }
+        public string PedidoId { get; set; }
 
         [Required(ErrorMessage = "Informe o conteúdo do arquivo JSON.")]
         [Display(Name = "Dados do arquivo JSON")]
         public string ConteudoJSON { get; set; }
 
-        [Display(Name = "Data e hora do evento")]
-        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
-        public DateTime EventoDataHora { get; set; } = DateTime.Now;
+
+        [Required]
+        [Display(Name = "Confirmado")]
+        public bool Confirmado { get; set; } = false;
 
         [Display(Name = "Data de cadastro")]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
