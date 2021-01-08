@@ -23,11 +23,11 @@ namespace Domain.Entidades
         public string CorrelacaoId { get; set; }
 
         [Display(Name = "Código de criação do pedido")]
-        public string CriadoEm { get; set; }
+        public DateTime CriadoEm { get; set; }
 
-        [Display(Name = "Data e hora do evento")]
-        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
-        public DateTime EventoDataHora { get; set; } = DateTime.Now;
+        //[Display(Name = "Data e hora do evento")]
+        //[DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
+        //public DateTime EventoDataHora { get; set; } = DateTime.Now;
 
         [Display(Name = "Código de identificação do pedido")]
         public string PedidoId { get; set; }

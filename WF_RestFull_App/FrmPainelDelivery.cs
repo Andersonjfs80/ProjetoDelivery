@@ -2,8 +2,10 @@
 using Application.Model;
 using Application.Services.Domain.Standard;
 using Application.Services.Interface.Standard;
+using Domain.Entidades;
 using System;
 using System.Collections.Generic;
+using System.Text.Json;
 using System.Windows.Forms;
 
 namespace WF_RestFull_App
@@ -19,12 +21,18 @@ namespace WF_RestFull_App
 
         private List<EventAcknowledgment> FEventAcknowledgmentList = new List<EventAcknowledgment>();
 
+        private List<EventoPolling> eventoPolling = new List<EventoPolling>();
+
+        private List<Evento> evento = new List<Evento>();
+
         private List<Order> FPendingOrderList = new List<Order>();
 
         private void FrmPainelDelivery_Load(object sender, EventArgs e)
         {
             tcPainelDelivery.SelectedTab = tpPedidos;
-            _token = GetAccessOauthToken(new Service());            
+            _token = GetAccessOauthToken(new Service());
+
+            dgvPedidosAgendados.DataSource = evento;
         }
 
         public Token GetAccessOauthToken(IService service)
@@ -41,24 +49,40 @@ namespace WF_RestFull_App
             {
                 var eventPollingList = service.GetEventPolling(_token);
 
-                richTextBox2.AppendText($"'eventPollingList'");
-                richTextBox2.AppendText($"{eventPollingList.Json}");
-                richTextBox2.AppendText($"{eventPollingList.Message}");
-                richTextBox2.AppendText($"{eventPollingList.Success}");
-                
+                richTextBox1.AppendText($"'eventPollingList'");
+                richTextBox1.AppendText($"Conteudo JSON: {eventPollingList.Json}");
+                richTextBox1.AppendText($"Mensagem: {eventPollingList.Message}");             
+                richTextBox1.AppendText($"Status:{eventPollingList.Success}");
+                richTextBox1.AppendText(" ");
+
                 if (eventPollingList.Result != null)
                 {
+                    eventoPolling.Add(new EventoPolling()
+                    {
+                        EventoPollingId = eventoPolling.Count + 1,
+                        QuantidadeEventos = eventPollingList.Result.Count,
+                        ConteudoJSON = eventPollingList.Json
+                    });
+                                    
                     foreach (var item in eventPollingList.Result)
                     {
-                        if ((item.Code == PollingEventStatusCode.PLACED) || (item.Code == PollingEventStatusCode.INTEGRATED))
+                        evento.Add(new Evento()
                         {
+                            EventoId = evento.Count + 1,
+                            EventoPollingId = eventoPolling.Count + 1,
+                            CorrelacaoId = item.CorrelationId,
+                            PedidoId = item.Id,
+                            CriadoEm = item.CreatedAt,
+                            Confirmado = false,
+                            EventoCodigo = item.Code,
+                            ConteudoJSON = JsonSerializer.Serialize(item)
+                        });
+
+                        if ((item.Code == PollingEventStatusCode.PLACED) || (item.Code == PollingEventStatusCode.INTEGRATED))
+                        {                            
                             var EventPendingOrder = service.GetPendingOrder(_token, item.CorrelationId);
                             if (EventPendingOrder.Success == true)
-                            {
-                                richTextBox2.AppendText($"'EventPendingOrder'");
-                                richTextBox2.AppendText($"{EventPendingOrder.Json}");
-                                richTextBox2.AppendText($"{EventPendingOrder.Message}");
-                                richTextBox2.AppendText($"{EventPendingOrder.Success}");
+                            {   
 
                                 if (EventPendingOrder != null)
                                 {
@@ -69,6 +93,10 @@ namespace WF_RestFull_App
 
                         FEventAcknowledgmentList.Add(new EventAcknowledgment() { id = item.Id });
                     }
+
+                    dgvPedidosAgendados.DataSource = null;
+                    dgvPedidosAgendados.DataSource = evento;
+                    dgvPedidosAgendados.Refresh();
                 }                
             }
 
@@ -97,10 +125,10 @@ namespace WF_RestFull_App
             {
                 IService service = new Service();
                 var eventAcknowledgmentPolling = service.SendEventAcknowledgmentPolling(_token, FEventAcknowledgmentList);
-                richTextBox2.AppendText($"'eventAcknowledgmentPolling'");
-                richTextBox2.AppendText($"{eventAcknowledgmentPolling.Json}");
-                richTextBox2.AppendText($"{eventAcknowledgmentPolling.Message}");
-                richTextBox2.AppendText($"{eventAcknowledgmentPolling.Success}");
+                richTextBox1.AppendText($"'eventAcknowledgmentPolling'");
+                richTextBox1.AppendText($"{eventAcknowledgmentPolling.Json}");
+                richTextBox1.AppendText($"{eventAcknowledgmentPolling.Message}");
+                richTextBox1.AppendText($"{eventAcknowledgmentPolling.Success}");
             }
         }
 
@@ -118,10 +146,10 @@ namespace WF_RestFull_App
                             EventOrderCode = PollingEventStatusCode.CONFIRMED
                         });
 
-                    richTextBox2.AppendText($"'sendOrdersStatus'");
-                    richTextBox2.AppendText($"{sendOrdersStatus.Json}");
-                    richTextBox2.AppendText($"{sendOrdersStatus.Message}");
-                    richTextBox2.AppendText($"{sendOrdersStatus.Success}");
+                    richTextBox1.AppendText($"'sendOrdersStatus'");
+                    richTextBox1.AppendText($"{sendOrdersStatus.Json}");
+                    richTextBox1.AppendText($"{sendOrdersStatus.Message}");
+                    richTextBox1.AppendText($"{sendOrdersStatus.Success}");
                 }
             }
         }
@@ -129,7 +157,7 @@ namespace WF_RestFull_App
         private void button4_Click(object sender, EventArgs e)
         {
             FEventAcknowledgmentList.Clear();
-            richTextBox2.Clear();
+            richTextBox1.Clear();
         }
     }
 }

@@ -38,3 +38,5 @@ C:\Users\Usuario\Desktop\Anderson\ProjetoDelivery\WF_RestFull_App\bin\Debug\netc
 C:\Users\Usuario\Desktop\Anderson\ProjetoDelivery\WF_RestFull_App\bin\Debug\netcoreapp3.1\Application.Domain.pdb
 C:\Users\Usuario\Desktop\Anderson\ProjetoDelivery\WF_RestFull_App\obj\Debug\netcoreapp3.1\WF_RestFul_App.csproj.CopyComplete
 C:\Users\Usuario\Desktop\Anderson\ProjetoDelivery\WF_RestFull_App\obj\Debug\netcoreapp3.1\WF_RestFul_App.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\Anderson\ProjetoDelivery\WF_RestFull_App\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\Usuario\Desktop\Anderson\ProjetoDelivery\WF_RestFull_App\bin\Debug\netcoreapp3.1\Domain.pdb
