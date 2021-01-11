@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Desktop\\Anderson\\ProjetoDelivery\\WF_RestFull_App\\WF_RestFul_App.csproj": {}
+    "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\WF_RestFull_App\\WF_RestFul_App.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\Anderson\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj": {
+    "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Anderson\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj",
+        "projectUniqueName": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj",
         "projectName": "Application.Domain",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Anderson\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Anderson\\ProjetoDelivery\\Application.Domain\\obj\\",
+        "projectPath": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj",
+        "packagesPath": "C:\\Users\\ander\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Application.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "E:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ander\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -30,6 +31,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -41,6 +43,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -51,29 +54,36 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.8.20417.9\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Usuario\\Desktop\\Anderson\\ProjetoDelivery\\DeliveryApiRestFul\\Application.csproj": {
+    "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\DeliveryApiRestFul\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Anderson\\ProjetoDelivery\\DeliveryApiRestFul\\Application.csproj",
+        "projectUniqueName": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\DeliveryApiRestFul\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Anderson\\ProjetoDelivery\\DeliveryApiRestFul\\Application.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Anderson\\ProjetoDelivery\\DeliveryApiRestFul\\obj\\",
+        "projectPath": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\DeliveryApiRestFul\\Application.csproj",
+        "packagesPath": "C:\\Users\\ander\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\DeliveryApiRestFul\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "E:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ander\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -86,9 +96,10 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Usuario\\Desktop\\Anderson\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Desktop\\Anderson\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj"
+              "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj": {
+                "projectPath": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj"
               }
             }
           }
@@ -101,6 +112,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -111,29 +123,36 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.8.20417.9\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Usuario\\Desktop\\Anderson\\ProjetoDelivery\\Domain\\Domain.csproj": {
+    "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Anderson\\ProjetoDelivery\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Anderson\\ProjetoDelivery\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Anderson\\ProjetoDelivery\\Domain\\obj\\",
+        "projectPath": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\ander\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "E:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ander\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -146,6 +165,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -157,6 +177,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -167,29 +188,36 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.8.20417.9\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Usuario\\Desktop\\Anderson\\ProjetoDelivery\\WF_RestFull_App\\WF_RestFul_App.csproj": {
+    "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\WF_RestFull_App\\WF_RestFul_App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Anderson\\ProjetoDelivery\\WF_RestFull_App\\WF_RestFul_App.csproj",
+        "projectUniqueName": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\WF_RestFull_App\\WF_RestFul_App.csproj",
         "projectName": "WF_RestFul_App",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\Anderson\\ProjetoDelivery\\WF_RestFull_App\\WF_RestFul_App.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\Anderson\\ProjetoDelivery\\WF_RestFull_App\\obj\\",
+        "projectPath": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\WF_RestFull_App\\WF_RestFul_App.csproj",
+        "packagesPath": "C:\\Users\\ander\\.nuget\\packages\\",
+        "outputPath": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\WF_RestFull_App\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "E:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ander\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -202,12 +230,13 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Usuario\\Desktop\\Anderson\\ProjetoDelivery\\DeliveryApiRestFul\\Application.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Desktop\\Anderson\\ProjetoDelivery\\DeliveryApiRestFul\\Application.csproj"
+              "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\DeliveryApiRestFul\\Application.csproj": {
+                "projectPath": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\DeliveryApiRestFul\\Application.csproj"
               },
-              "C:\\Users\\Usuario\\Desktop\\Anderson\\ProjetoDelivery\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Desktop\\Anderson\\ProjetoDelivery\\Domain\\Domain.csproj"
+              "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Domain\\Domain.csproj"
               }
             }
           }
@@ -220,6 +249,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -230,6 +260,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.2, 3.1.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -238,7 +274,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.8.20417.9\\RuntimeIdentifierGraph.json"
         }
       }
     }
