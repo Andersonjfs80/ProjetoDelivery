@@ -17,8 +17,9 @@ namespace WF_RestFull_App
             InitializeComponent();
         }
 
+        private UserAPI _usuarioLogado;
         private Token _token;
-
+        
         private List<EventAcknowledgment> FEventAcknowledgmentList = new List<EventAcknowledgment>();
 
         private List<EventoPolling> eventoPolling = new List<EventoPolling>();
@@ -30,14 +31,23 @@ namespace WF_RestFull_App
         private void FrmPainelDelivery_Load(object sender, EventArgs e)
         {
             tcPainelDelivery.SelectedTab = tpPedidos;
-            _token = GetAccessOauthToken(new Service());
+
+            _usuarioLogado = new UserAPI()
+            {
+                ClientId = tbClienteId.Text,
+                ClientSecret = tbClienteSecret.Text,
+                UserName = tbUsuario.Text,
+                Password = tbSenha.Text
+            };
+
+            _token = GetAccessOauthToken(new Service(), _usuarioLogado);
 
             dgvPedidosAgendados.DataSource = evento;
         }
 
-        public Token GetAccessOauthToken(IService service)
+        public Token GetAccessOauthToken(IService service, UserAPI userLogado)
         {
-            _token = service.GetAccessOauthToken(new UserAPI()).Result;
+            _token = service.GetAccessOauthToken(userLogado).Result;
             return _token;
         }
 
@@ -45,7 +55,7 @@ namespace WF_RestFull_App
         {
             IService service = new Service();
 
-            if ((_token.IsTokenValid) || (GetAccessOauthToken(service).IsTokenValid))
+            if ((_token.IsTokenValid) || (GetAccessOauthToken(service, _usuarioLogado).IsTokenValid))
             {
                 var eventPollingList = service.GetEventPolling(_token);
 

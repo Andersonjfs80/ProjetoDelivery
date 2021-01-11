@@ -22,3 +22,15 @@ C:\Users\Usuario\Desktop\Anderson\ProjetoDelivery\DeliveryApiRestFul\bin\Debug\n
 C:\Users\Usuario\Desktop\Anderson\ProjetoDelivery\DeliveryApiRestFul\bin\Debug\netcoreapp3.1\Application.Domain.dll
 C:\Users\Usuario\Desktop\Anderson\ProjetoDelivery\DeliveryApiRestFul\bin\Debug\netcoreapp3.1\Application.Domain.pdb
 C:\Users\Usuario\Desktop\Anderson\ProjetoDelivery\DeliveryApiRestFul\obj\Debug\netcoreapp3.1\Application.csproj.CopyComplete
+D:\Documents\Visual Studio 2017\Projects\Andersonjfs80\ProjetoDelivery\DeliveryApiRestFul\bin\Debug\netcoreapp3.1\Application.deps.json
+D:\Documents\Visual Studio 2017\Projects\Andersonjfs80\ProjetoDelivery\DeliveryApiRestFul\bin\Debug\netcoreapp3.1\Application.dll
+D:\Documents\Visual Studio 2017\Projects\Andersonjfs80\ProjetoDelivery\DeliveryApiRestFul\bin\Debug\netcoreapp3.1\Application.pdb
+D:\Documents\Visual Studio 2017\Projects\Andersonjfs80\ProjetoDelivery\DeliveryApiRestFul\bin\Debug\netcoreapp3.1\Application.Domain.dll
+D:\Documents\Visual Studio 2017\Projects\Andersonjfs80\ProjetoDelivery\DeliveryApiRestFul\bin\Debug\netcoreapp3.1\Application.Domain.pdb
+D:\Documents\Visual Studio 2017\Projects\Andersonjfs80\ProjetoDelivery\DeliveryApiRestFul\obj\Debug\netcoreapp3.1\Application.csprojAssemblyReference.cache
+D:\Documents\Visual Studio 2017\Projects\Andersonjfs80\ProjetoDelivery\DeliveryApiRestFul\obj\Debug\netcoreapp3.1\Application.AssemblyInfoInputs.cache
+D:\Documents\Visual Studio 2017\Projects\Andersonjfs80\ProjetoDelivery\DeliveryApiRestFul\obj\Debug\netcoreapp3.1\Application.AssemblyInfo.cs
+D:\Documents\Visual Studio 2017\Projects\Andersonjfs80\ProjetoDelivery\DeliveryApiRestFul\obj\Debug\netcoreapp3.1\Application.csproj.CoreCompileInputs.cache
+D:\Documents\Visual Studio 2017\Projects\Andersonjfs80\ProjetoDelivery\DeliveryApiRestFul\obj\Debug\netcoreapp3.1\Application.csproj.CopyComplete
+D:\Documents\Visual Studio 2017\Projects\Andersonjfs80\ProjetoDelivery\DeliveryApiRestFul\obj\Debug\netcoreapp3.1\Application.dll
+D:\Documents\Visual Studio 2017\Projects\Andersonjfs80\ProjetoDelivery\DeliveryApiRestFul\obj\Debug\netcoreapp3.1\Application.pdb
