@@ -13,8 +13,8 @@ namespace Infrastructure.DBConfiguration.EFCore
         {
             if (!dbContextOptionsBuilder.IsConfigured)
             {
-                dbContextOptionsBuilder.UseSqlServer(DatabaseConnection.ConnectionConfiguration
-                                                    .GetConnectionString("DefaultConnection"));
+                dbContextOptionsBuilder.UseSqlServer(
+                    DatabaseConnection.ConnectionConfiguration.GetConnectionString("DefaultConnectionSqlLite"));
             }
         }
 
