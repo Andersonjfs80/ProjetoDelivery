@@ -1,13 +1,5 @@
-﻿using System.Threading.Tasks;
-using Domain.Entidades;
-using Application.Services.Domain;
+﻿using Application.Services.Domain;
 using Application.Services.Standard;
-using Infrastructure.Interfaces.Domain;
-using System.Collections.Generic;
-using System.Linq.Expressions;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using System;
-using System.Linq;
 
 namespace Application.Services
 {

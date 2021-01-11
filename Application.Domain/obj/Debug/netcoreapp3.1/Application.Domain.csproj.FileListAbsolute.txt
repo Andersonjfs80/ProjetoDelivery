@@ -25,3 +25,12 @@ D:\Documents\Visual Studio 2017\Projects\Andersonjfs80\ProjetoDelivery\Applicati
 D:\Documents\Visual Studio 2017\Projects\Andersonjfs80\ProjetoDelivery\Application.Domain\obj\Debug\netcoreapp3.1\Application.Domain.csproj.CoreCompileInputs.cache
 D:\Documents\Visual Studio 2017\Projects\Andersonjfs80\ProjetoDelivery\Application.Domain\obj\Debug\netcoreapp3.1\Application.Domain.dll
 D:\Documents\Visual Studio 2017\Projects\Andersonjfs80\ProjetoDelivery\Application.Domain\obj\Debug\netcoreapp3.1\Application.Domain.pdb
+C:\Users\Usuario\Desktop\Anderson\Application.Domain\bin\Debug\netcoreapp3.1\Application.Domain.deps.json
+C:\Users\Usuario\Desktop\Anderson\Application.Domain\bin\Debug\netcoreapp3.1\Application.Domain.dll
+C:\Users\Usuario\Desktop\Anderson\Application.Domain\bin\Debug\netcoreapp3.1\Application.Domain.pdb
+C:\Users\Usuario\Desktop\Anderson\Application.Domain\obj\Debug\netcoreapp3.1\Application.Domain.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\Anderson\Application.Domain\obj\Debug\netcoreapp3.1\Application.Domain.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Anderson\Application.Domain\obj\Debug\netcoreapp3.1\Application.Domain.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Anderson\Application.Domain\obj\Debug\netcoreapp3.1\Application.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Anderson\Application.Domain\obj\Debug\netcoreapp3.1\Application.Domain.dll
+C:\Users\Usuario\Desktop\Anderson\Application.Domain\obj\Debug\netcoreapp3.1\Application.Domain.pdb

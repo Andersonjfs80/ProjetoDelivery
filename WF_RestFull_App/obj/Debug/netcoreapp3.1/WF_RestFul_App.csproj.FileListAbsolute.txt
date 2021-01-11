@@ -62,3 +62,25 @@ D:\Documents\Visual Studio 2017\Projects\Andersonjfs80\ProjetoDelivery\WF_RestFu
 D:\Documents\Visual Studio 2017\Projects\Andersonjfs80\ProjetoDelivery\WF_RestFull_App\obj\Debug\netcoreapp3.1\WF_RestFul_App.dll
 D:\Documents\Visual Studio 2017\Projects\Andersonjfs80\ProjetoDelivery\WF_RestFull_App\obj\Debug\netcoreapp3.1\WF_RestFul_App.pdb
 D:\Documents\Visual Studio 2017\Projects\Andersonjfs80\ProjetoDelivery\WF_RestFull_App\obj\Debug\netcoreapp3.1\WF_RestFul_App.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\Anderson\WF_RestFull_App\bin\Debug\netcoreapp3.1\WF_RestFul_App.exe
+C:\Users\Usuario\Desktop\Anderson\WF_RestFull_App\bin\Debug\netcoreapp3.1\WF_RestFul_App.deps.json
+C:\Users\Usuario\Desktop\Anderson\WF_RestFull_App\bin\Debug\netcoreapp3.1\WF_RestFul_App.runtimeconfig.json
+C:\Users\Usuario\Desktop\Anderson\WF_RestFull_App\bin\Debug\netcoreapp3.1\WF_RestFul_App.runtimeconfig.dev.json
+C:\Users\Usuario\Desktop\Anderson\WF_RestFull_App\bin\Debug\netcoreapp3.1\WF_RestFul_App.dll
+C:\Users\Usuario\Desktop\Anderson\WF_RestFull_App\bin\Debug\netcoreapp3.1\WF_RestFul_App.pdb
+C:\Users\Usuario\Desktop\Anderson\WF_RestFull_App\bin\Debug\netcoreapp3.1\Application.dll
+C:\Users\Usuario\Desktop\Anderson\WF_RestFull_App\bin\Debug\netcoreapp3.1\Application.Domain.dll
+C:\Users\Usuario\Desktop\Anderson\WF_RestFull_App\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\Usuario\Desktop\Anderson\WF_RestFull_App\bin\Debug\netcoreapp3.1\Application.pdb
+C:\Users\Usuario\Desktop\Anderson\WF_RestFull_App\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\Usuario\Desktop\Anderson\WF_RestFull_App\bin\Debug\netcoreapp3.1\Application.Domain.pdb
+C:\Users\Usuario\Desktop\Anderson\WF_RestFull_App\obj\Debug\netcoreapp3.1\WF_RestFul_App.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\Anderson\WF_RestFull_App\obj\Debug\netcoreapp3.1\WF_RestFull_App.FrmPainelDelivery.resources
+C:\Users\Usuario\Desktop\Anderson\WF_RestFull_App\obj\Debug\netcoreapp3.1\WF_RestFul_App.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\Anderson\WF_RestFull_App\obj\Debug\netcoreapp3.1\WF_RestFul_App.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Anderson\WF_RestFull_App\obj\Debug\netcoreapp3.1\WF_RestFul_App.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Anderson\WF_RestFull_App\obj\Debug\netcoreapp3.1\WF_RestFul_App.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Anderson\WF_RestFull_App\obj\Debug\netcoreapp3.1\WF_RestFul_App.csproj.CopyComplete
+C:\Users\Usuario\Desktop\Anderson\WF_RestFull_App\obj\Debug\netcoreapp3.1\WF_RestFul_App.dll
+C:\Users\Usuario\Desktop\Anderson\WF_RestFull_App\obj\Debug\netcoreapp3.1\WF_RestFul_App.pdb
+C:\Users\Usuario\Desktop\Anderson\WF_RestFull_App\obj\Debug\netcoreapp3.1\WF_RestFul_App.genruntimeconfig.cache

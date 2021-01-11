@@ -34,3 +34,15 @@ D:\Documents\Visual Studio 2017\Projects\Andersonjfs80\ProjetoDelivery\DeliveryA
 D:\Documents\Visual Studio 2017\Projects\Andersonjfs80\ProjetoDelivery\DeliveryApiRestFul\obj\Debug\netcoreapp3.1\Application.csproj.CopyComplete
 D:\Documents\Visual Studio 2017\Projects\Andersonjfs80\ProjetoDelivery\DeliveryApiRestFul\obj\Debug\netcoreapp3.1\Application.dll
 D:\Documents\Visual Studio 2017\Projects\Andersonjfs80\ProjetoDelivery\DeliveryApiRestFul\obj\Debug\netcoreapp3.1\Application.pdb
+C:\Users\Usuario\Desktop\Anderson\DeliveryApiRestFul\bin\Debug\netcoreapp3.1\Application.deps.json
+C:\Users\Usuario\Desktop\Anderson\DeliveryApiRestFul\bin\Debug\netcoreapp3.1\Application.dll
+C:\Users\Usuario\Desktop\Anderson\DeliveryApiRestFul\bin\Debug\netcoreapp3.1\Application.pdb
+C:\Users\Usuario\Desktop\Anderson\DeliveryApiRestFul\bin\Debug\netcoreapp3.1\Application.Domain.dll
+C:\Users\Usuario\Desktop\Anderson\DeliveryApiRestFul\bin\Debug\netcoreapp3.1\Application.Domain.pdb
+C:\Users\Usuario\Desktop\Anderson\DeliveryApiRestFul\obj\Debug\netcoreapp3.1\Application.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\Anderson\DeliveryApiRestFul\obj\Debug\netcoreapp3.1\Application.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Anderson\DeliveryApiRestFul\obj\Debug\netcoreapp3.1\Application.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Anderson\DeliveryApiRestFul\obj\Debug\netcoreapp3.1\Application.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Anderson\DeliveryApiRestFul\obj\Debug\netcoreapp3.1\Application.csproj.CopyComplete
+C:\Users\Usuario\Desktop\Anderson\DeliveryApiRestFul\obj\Debug\netcoreapp3.1\Application.dll
+C:\Users\Usuario\Desktop\Anderson\DeliveryApiRestFul\obj\Debug\netcoreapp3.1\Application.pdb
