@@ -1,7 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Domain.Entidades;
-using System.Collections.Generic;
 
 namespace Infrastructure.DBConfiguration.EFCore
 {
@@ -13,8 +11,7 @@ namespace Infrastructure.DBConfiguration.EFCore
         {
             if (!dbContextOptionsBuilder.IsConfigured)
             {
-                dbContextOptionsBuilder.UseSqlServer(
-                    DatabaseConnection.ConnectionConfiguration.GetConnectionString("DefaultConnectionSqlLite"));
+                dbContextOptionsBuilder.UseSqlServer(DatabaseConnection.ConnectionConfiguration.GetConnectionString("DefaultConnectionSqlLite"));                
             }
         }
 

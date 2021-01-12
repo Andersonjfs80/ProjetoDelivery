@@ -1,6 +1,11 @@
-﻿using System;
+﻿using Domain.Entidades;
+using Infrastructure.DBConfiguration.EFCore;
+using Infrastructure.Interfaces.Domain;
+using Infrastructure.Repositories.Domain.Standard;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,7 +13,7 @@ namespace Infrastructure.Repositories.Domain
 {
     public class EventoOrderRepository : DomainRepository<EventoOrder>, IEventoOrderRepository
     {
-        public EventoRepository(ApplicationContext context) : base(context) { }
+        public EventoOrderRepository(ApplicationContext context) : base(context) { }
 
         public async Task<bool> CreateOrUpdate(EventoOrder eventoOrder)
         {

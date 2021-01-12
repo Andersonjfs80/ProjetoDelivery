@@ -5,7 +5,6 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using Domain.Entidades;
 using Infrastructure.Interfaces.Domain.Standard;
-using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Infrastructure.Interfaces.Domain
 {

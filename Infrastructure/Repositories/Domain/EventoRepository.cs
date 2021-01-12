@@ -1,6 +1,13 @@
-﻿using Infrastructure.DBConfiguration.EFCore;
+﻿using Domain.Entidades;
+using Infrastructure.DBConfiguration.EFCore;
 using Infrastructure.Interfaces.Domain;
 using Infrastructure.Repositories.Domain.Standard;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace Infrastructure.Repositories.Domain
 {
@@ -10,7 +17,7 @@ namespace Infrastructure.Repositories.Domain
 
         public async Task<bool> CreateOrUpdate(Evento evento)
         {
-            if (Evento.EventoId > 0)
+            if (evento.EventoId > 0)
             {
                 Update(evento);
             }

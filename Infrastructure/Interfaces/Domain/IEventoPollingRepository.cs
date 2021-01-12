@@ -1,12 +1,15 @@
-﻿using System;
+﻿using Domain.Entidades;
+using Infrastructure.Interfaces.Domain.Standard;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Infrastructure.Interfaces.Domain
 {
-    public interface IEventoPolling : IDomainRepository<EventoPolling>
+    public interface IEventoPollingRepository : IDomainRepository<EventoPolling>
     {
         Task<bool> CreateOrUpdate(EventoPolling eventoPolling);
 

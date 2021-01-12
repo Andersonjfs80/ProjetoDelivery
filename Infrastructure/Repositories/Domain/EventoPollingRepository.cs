@@ -1,12 +1,17 @@
-﻿using System;
+﻿using Domain.Entidades;
+using Infrastructure.DBConfiguration.EFCore;
+using Infrastructure.Interfaces.Domain;
+using Infrastructure.Repositories.Domain.Standard;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Infrastructure.Repositories.Domain
 {
-    public class EventoPollingRepository : DomainRepository<EventoPolling>, IEventoRepository
+    public class EventoPollingRepository : DomainRepository<EventoPolling>, IEventoPollingRepository
     {
         public EventoPollingRepository(ApplicationContext context) : base(context) { }
 
@@ -24,7 +29,7 @@ namespace Infrastructure.Repositories.Domain
             return await SaveAsync() > 0;
         }
 
-        public async Task<IEnumerable<Evento>> GetAllIncludingAsync(Expression<Func<EventoPolling, bool>> filter = null, Func<IQueryable<EventoPolling>, IOrderedQueryable<EventoPolling>> orderBy = null, params string[] includeProperties)
+        public async Task<IEnumerable<EventoPolling>> GetAllIncludingAsync(Expression<Func<EventoPolling, bool>> filter, Func<IQueryable<EventoPolling>, IOrderedQueryable<EventoPolling>> orderBy, params string[] includeProperties)
         {
             IQueryable<EventoPolling> query = dbSet;
 
