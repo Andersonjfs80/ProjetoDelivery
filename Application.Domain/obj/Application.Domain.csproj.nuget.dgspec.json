@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj": {}
+    "C:\\Users\\Usuario\\Desktop\\Anderson\\Application.Domain\\Application.Domain.csproj": {}
   },
   "projects": {
-    "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj": {
+    "C:\\Users\\Usuario\\Desktop\\Anderson\\Application.Domain\\Application.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Anderson\\Application.Domain\\Application.Domain.csproj",
         "projectName": "Application.Domain",
-        "projectPath": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Application.Domain\\Application.Domain.csproj",
-        "packagesPath": "C:\\Users\\ander\\.nuget\\packages\\",
-        "outputPath": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\Application.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\Desktop\\Anderson\\Application.Domain\\Application.Domain.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\Desktop\\Anderson\\Application.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "E:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\ander\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -54,18 +53,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[3.1.2, 3.1.2]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.8.20417.9\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,7 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 using Domain.Entidades;
-using System.Collections.Generic;
 
 namespace Infrastructure.DBConfiguration.EFCore
 {
@@ -13,8 +11,7 @@ namespace Infrastructure.DBConfiguration.EFCore
         {
             if (!dbContextOptionsBuilder.IsConfigured)
             {
-                dbContextOptionsBuilder.UseSqlServer(DatabaseConnection.ConnectionConfiguration
-                                                    .GetConnectionString("DefaultConnection"));
+                dbContextOptionsBuilder.UseSqlServer(DatabaseConnection.ConnectionConfiguration.GetConnectionString("DefaultConnectionSqlLite"));                
             }
         }
 
@@ -39,23 +36,8 @@ namespace Infrastructure.DBConfiguration.EFCore
             //Add-Migration NewCampoPessoaConvenio
         }
 
-        public DbSet<Pessoa> People { get; set; }
-        public DbSet<PessoaEndereco> PeopleAddresses { get; set; }
-        public DbSet<PessoaMeioContato> PessoaMeiosContato { get; set; }
-        public DbSet<Produto> Produtos { get; set; }
-        public DbSet<ProdutoPreco> ProdutosPreco { get; set; }
-        public DbSet<ProdutoCodigo> ProdutosCodigo { get; set; }
-        public DbSet<ProdutoImagem> ProdutosImagens { get; set; }
-        public DbSet<ProdutoCategoria> ProdutosCategoria { get; set; }
-        public DbSet<Unidade> Unidades { get; set; }
-        public DbSet<Categoria> Categorias { get; set; }
-        public DbSet<CEP> CEPs { get; set; }
-        public DbSet<TipoEndereco> TiposEndereco { get; set; }
-        public DbSet<Regiao> Regioes { get; set; }
-        public DbSet<Pais> Paises { get; set; }
-        public DbSet<Estado> Estados { get; set; }
-        public DbSet<Municipio> Municipios { get; set; }
-        public DbSet<Bairro> Bairros { get; set; }
-        public DbSet<MainMenu> MainMenus { get; set; }
+        public DbSet<Evento> Eventos { get; set; }
+        public DbSet<EventoOrder> EventoOrders { get; set; }
+        public DbSet<EventoPolling> EventoPollings { get; set; }
     }
 }
