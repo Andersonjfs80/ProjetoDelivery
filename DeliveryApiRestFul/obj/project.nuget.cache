@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "6SubaBHrX4dYGgn9EUDgfB+3iVqCXWEX6Lvnk+TC/kC0LnG4Pzf2hor+rS60anWlw8PnkBrIXw1Ae13eRheI7w==",
+  "dgSpecHash": "HhD6MuEnPR50F4eMauVKrosiqbuRl+/eN9Zt2apKk45K5rpJgefqfzg3w0hERXsRlJ3b2ymKIOiMnYM3cMgn4A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\Anderson\\DeliveryApiRestFul\\Application.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Documents\\Visual Studio 2017\\Projects\\Andersonjfs80\\ProjetoDelivery\\DeliveryApiRestFul\\Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ander\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
   "logs": []
 }
